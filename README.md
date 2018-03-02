@@ -5,16 +5,15 @@ Today, IT's role has everything to do with the future. Being the visionary for w
 
 Microsoft and it's partners are here to help you close that space, help you reach higher - to a modern cloud. We are here to help you, and your business, finally... **MOVE UP!**
 
-Move (Apps & Infrastructure) Up to a Modern Cloud, transform IT into a Strategic Asset and Center of Business Innovation. Get *hand-on* and see how:
+Move (Apps & Infrastructure) Up to a Modern Cloud, transform IT into a Strategic Asset and Center of Business Innovation. Get *hand-on* and see how to:
 
-* **Security**: Protect on-prem, in the cloud and transport in between with Palo Alto Networks.
+* **Security**: Protect on-prem, in the cloud and transport in between with [Palo Alto Networks](Labs/PaloAlto).
 
-* **Data & Managagement**: Back-up, Disaster Recovery, Archival and Management of Data and Apps with Rubrik.
+* **Data & Managagement**: Back-up, Disaster Recovery, Archival and Management of Data and Apps with [Rubrik](Labs/Rubrik).
 
-* **File Management**: Modernize NAS with Scalable File Sharing, Global File Access, Backup and Archive with Nasuni.
+* **File Management**: Modernize NAS with Scalable File Sharing, Global File Access, Backup and Archive with [Nasuni](Labs/Nasuni).
 
-* **Modern App Development**: Modernize Legacy Applications (any App, any OS, anywhere) within Containers with Docker.
-
+* **Modern App Development**: Modernize Legacy Applications (any App, any OS, anywhere) within Containers with [Docker](Labs/Docker).
 
 # Contributing
 
