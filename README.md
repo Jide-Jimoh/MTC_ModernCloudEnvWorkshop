@@ -7,7 +7,7 @@ Today, IT's role has everything to do with the future. Being the visionary for w
 
 Microsoft and it's partners are here to help you close that space, help you reach higher - to a modern cloud. We are here to help you, and your business, finally... **MOVE UP!**
 
-Move (Apps & Infrastructure) Up to a Modern Cloud, transform IT into a Strategic Asset and Center of Business Innovation. Get *hand-on* and see how to:
+Move (Apps & Infrastructure) Up to a Modern Cloud, transform IT into a Strategic Asset and Center of Business Innovation. Get *hands-on* and see how to:
 
 * **Security**: Protect on-prem, in the cloud and transport in between with [Palo Alto Networks (Lab)](Labs/PaloAlto).
 
