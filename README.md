@@ -1,5 +1,5 @@
 
-![Move Up!](images/moveUp.png)
+![Move Up!](Images/moveUp.png)
 
 # Move Up to a Modern Cloud
 
