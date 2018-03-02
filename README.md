@@ -1,4 +1,6 @@
 
+![Move Up!](images/moveUp.png)
+
 # Move Up to a Modern Cloud
 
 Today, IT's role has everything to do with the future. Being the visionary for where your company will go next. And right now, there's space that exists between you and your organization's goal - in that space are ideas, challengesm solutions and routes to achieving those goals.
@@ -7,13 +9,13 @@ Microsoft and it's partners are here to help you close that space, help you reac
 
 Move (Apps & Infrastructure) Up to a Modern Cloud, transform IT into a Strategic Asset and Center of Business Innovation. Get *hand-on* and see how to:
 
-* **Security**: Protect on-prem, in the cloud and transport in between with [Palo Alto Networks](Labs/PaloAlto).
+* **Security**: Protect on-prem, in the cloud and transport in between with [Palo Alto Networks (Lab)](Labs/PaloAlto).
 
-* **Data & Managagement**: Back-up, Disaster Recovery, Archival and Management of Data and Apps with [Rubrik](Labs/Rubrik).
+* **Data & Managagement**: Back-up, Disaster Recovery, Archival and Management of Data and Apps with [Rubrik (Lab)](Labs/Rubrik).
 
-* **File Management**: Modernize NAS with Scalable File Sharing, Global File Access, Backup and Archive with [Nasuni](Labs/Nasuni).
+* **File Management**: Modernize NAS with Scalable File Sharing, Global File Access, Backup and Archive with [Nasuni (Lab)](Labs/Nasuni).
 
-* **Modern App Development**: Modernize Legacy Applications (any App, any OS, anywhere) within Containers with [Docker](Labs/Docker).
+* **Modern App Development**: Modernize Legacy Applications (any App, any OS, anywhere) within Containers with [Docker (Lab)](Labs/Docker).
 
 # Contributing
 
