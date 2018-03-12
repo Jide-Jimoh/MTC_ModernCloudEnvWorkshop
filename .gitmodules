@@ -1,0 +1,3 @@
+[submodule "Labs/Docker"]
+	path = Labs/Docker
+	url = https://github.com/vkacherov/hybrid-workshop
