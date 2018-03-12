@@ -1,15 +1,17 @@
-<img src="../../Images/paloalto.png" width="250">
+# Deploying Palo Alto Firewall on Azure
 
-# Palo Alto  Hands-On Lab
+> **Difficulty**: Intermediate (assumes basic familiarity with Azure and Networking)
 
-This lab guide aims to provide users with a hands-on experience in deploying the Palo Alto Network Firewall on the Azure environment. At the end of this lab, the users should have experience in creating and configuring Azure Resource Group which comprises of Azure Virtual Network (VNET), Availability Set (AvSet), Azure Load Balancer (ALB), User Defined Routes (UDR) and the Palo Alto Networks Firewall. 
+> **Time**: Approximately 75 minutes
 
-The following is the network diagram of this lab. We will attempt to build this in the Azure environment. There will be 1 Virtual Network (vnet). Within the vnet, we will deploy 2 x Azure Load Balancers and 2 x Linux web servers behind the Palo Alto Networks Firewall. The inbound traffic from the internet will be load balanced by an external Azure Load Balancer (ALB). 
+This lab guide aims to provide users with a hands-on experience in deploying the Palo Alto Network Firewall on the Azure environment - a simple, two-tiered application framework including a VM-Series firewall. At the end of this lab, the users should have experience in creating and configuring Azure Resource Group which comprises of Azure Virtual Network (VNET), Availability Set (AvSet), Azure Load Balancer (ALB), User Defined Routes (UDR) and the Palo Alto Networks Firewall.
+
+The following is the network diagram of this lab. We will attempt to build this in the Azure environment. The ARM template includes the following components to help deploy the firewall as a gateway for Internet-facing applications— a VM-Series firewall, and two Linux virtual machines that are configured as a WordPress server and MySQL server respectively (representing a two-tier application environment). The template also includes the functions to create the VNet and subnets within the resource group, and adds the necessary user-defined routes (UDRs) and IP forwarding flags to enable the VM-Series firewall to secure the Azure resource group.
 
 ![Lab Diagram](./Images/paloalto-lab-arch.png)
 
 # Lab Instructions
-Please follow the lab instruction here: [APAC Azure Deployment Lab Guide](palab.docx)
+Please follow the lab instruction here: [APAC Azure Deployment Lab Guide](lab.pdf)
 
 <a name="CleaningUp"></a>
 
