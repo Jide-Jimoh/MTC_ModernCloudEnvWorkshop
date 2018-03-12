@@ -17,7 +17,7 @@ Move (Apps & Infrastructure) Up to a Modern Cloud, transform IT into a Strategic
 
 * **File Management**: Modernize NAS with Scalable File Sharing, Global File Access, Backup and Archive with [Nasuni (Lab)](Labs/Nasuni).
 
-* **Modern App Development**: Modernize Legacy Applications (any App, any OS, anywhere) within Containers with [Docker (Lab)](Labs/Docker).
+* **Modern App Development**: Modernize Legacy Applications (any App, any OS, anywhere) within Containers with [Docker (Lab)](https://github.com/vkacherov/hybrid-workshop).
 
 # Contributing
 
