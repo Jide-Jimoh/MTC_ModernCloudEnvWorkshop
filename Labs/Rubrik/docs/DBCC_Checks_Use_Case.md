@@ -1,0 +1,14 @@
+# DBCC Checks
+One of the use cases for Live Mounts is offline consistency checks. A DBCC check is a way for SQL Server to validate the physical and logical consistency of a database. The full write up of this command can be found in [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql). By running this command against a Live Mount, clients can validate their backups and data without impact their production version of the database.
+
+There are some limitation to this use case, due to the nature of the Rubrik SDFS. When a DBCC CHECKDB command is executed, SQL Server will attempt to create a SQL Server database snapshot so that it has a consistent version of the database to execute against. Currently, SDFS does not support the creation of sparse files, meaning the snapshot can not be created. This means that certain parts of the command can not be executed.
+
+Command | Results | Notes
+--- | --- | ---
+DBCC CHECKDB()<br><br>Manually Created Snapshot | Success | Users can create their own manual database snapshots from a Live Mount and run the DBCC check against the snapshot. This feature is only available in Enterprise Edition previous to SQL Server 2016 SP1 (where it was introduced for all editions).<br>Example: <br><pre>CREATE DATABASE [TPCH_1F10G_LM_SS]<br>ON (name=TPCH_1F10G_1,filename='E:\SQLFiles\data\TPCH_1F10G_1.ss')<br>AS SNAPSHOT OF TPCH_1F10G_LM<br>DBCC CHECKDB (TPCH_1F10G_LM_SS)</pre>
+DBCC CHECKDB ()<br>OR<br>DBCC CHECKALLOC() | Partial Success | Running the basic command will validate the logical consistency of all tables and views, but not the physical consistency of the database. Any Service Broker components will also not be evaluated. The user will see the following error message:<br><br>Msg 1823, Level 16, State 2, Line 19<br>A database snapshot cannot be created because it failed to start.<br>Msg 1823, Level 16, State 8, Line 19<br>A database snapshot cannot be created because it failed to start.<br>Msg 5119, Level 16, State 2, Line 19<br>Cannot make the file "<FILE PATH>" a sparse file. Make sure the file system supports sparse files.<br>Msg 7928, Level 16, State 1, Line 19<br>The database snapshot for online checks could not be created. Either the reason is given in a previous error or <br>one of the underlying volumes does not support sparse files or alternate streams. Attempting to get exclusive <br>access to run checks offline.
+DBCC CHECKDB () WITH TABLOCK<br><br>OR<br><br>DBCC CHECKALLOC() WITH TABLOCK| Success | This executes the logical checks, but no physical or Service Broker checks. This will also create meta-data locks on the tables and the database that could block other processes.
+DBCC CHECKDB () WITH PHYSICAL_ONLY | Failure | The database snapshot is required for any physical checks.
+DBCC CHECKCATALOG() | Failure | The database snapshot is required for any catalog checks.
+
+
